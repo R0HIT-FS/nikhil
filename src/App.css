@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: title;
+  src: url("/me2.woff2");
+}
+
+@font-face {
+  font-family: ppregular;
+  src: url("/PPWriter-Regular.otf");
+}
+
+@font-face {
+  font-family: ppregulartext;
+  src: url("/PPWriter-RegularText.otf");
+}
+
+@font-face {
+  font-family: ppthin;
+  src: url("/PPWriter-Thin.otf");
+}
+
+@font-face {
+  font-family: ppthintext;
+  src: url("/public/PPWriter-ThinText.otf");
+}
+
+.title{
+  font-family: title;
+}
+
+.ppregular{
+  font-family: ppregular;
+}
+
+.ppregulartext{
+  font-family: ppregulartext;
+}
+
+.ppthin{
+  font-family: ppthin;
+}
+
+.ppthintext{
+  font-family: ppthintext;
+}
+
+
+
