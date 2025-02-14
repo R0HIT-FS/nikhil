@@ -7,9 +7,9 @@ import Marquee from "./Marquee";
 // import RollingText from "./RollingText";
 // import HoverEffectLink from "./HoverEffectLink";
 import ParallaxImage from "./ParallaxImage";
+import ExpandableImage from "./ExpandabeImage";
 
 const Home = () => {
-
   const imgRef = useRef(null);
 
   useEffect(() => {
@@ -27,7 +27,6 @@ const Home = () => {
 
   return (
     <div className="bg-[#F2F1E9] w-full flex flex-col justify-center gap-8 items-center relative">
-            
       <div className="h-screen relative w-full overflow-hidden flex justify-center items-center">
         <div className="flex justify-center items-center w-full p-10">
           <div className=" w-full h-[400px] sm:h-[500px] sm:w-[400px] relative overflow-hidden">
@@ -63,7 +62,6 @@ const Home = () => {
           exit={{ y: 0 }}
           className="absolute bottom-0 overflow-hidden "
         >
-          
           <Marquee name={"Nikhil Dalton"} />
         </motion.div>
       </div>
@@ -78,17 +76,26 @@ const Home = () => {
         </div>
       </div>
       <div className="flex-col md:flex justify-center items-center gap-5">
-      <div className="w-[400px] h-[500px]">
-            <ParallaxImage src={"https://images.unsplash.com/photo-1606216794079-73f85bbd57d5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} height={"100%"}/>
-          </div>
-      <div className="w-[400px] h-[500px]">
-            <ParallaxImage src={"https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} height={"100%"}/>
-          </div>
-      <div className="w-[400px] h-[500px]">
-            <ParallaxImage src={"https://plus.unsplash.com/premium_photo-1675851210020-045950ac0215?q=80&w=1946&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} height={"100%"}/>
-          </div>
+        <div className="w-[400px] h-[500px]">
+          <ExpandableImage
+            src={`https://images.unsplash.com/photo-1606216794079-73f85bbd57d5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D`}
+            alt={"Image"}
+          />
+        </div>
+        <div className="w-[400px] h-[500px]">
+          <ExpandableImage
+            src={`https://images.unsplash.com/photo-1732737011207-69e25773b3d1?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D`}
+            alt={"Image"}
+          />
+        </div>
+        <div className="w-[400px] h-[500px]">
+          <ExpandableImage
+            src={`https://images.unsplash.com/photo-1532381872557-b370482876a3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fDRrfGVufDB8fDB8fHww`}
+            alt={"Image"}
+          />
+        </div>
       </div>
-          <div className="w-full h-[200vh] bg-green-500"></div>
+      <div className="w-full h-[200vh] bg-green-500"></div>
     </div>
   );
 };

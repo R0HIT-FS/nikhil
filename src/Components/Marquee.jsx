@@ -34,7 +34,7 @@ const Marquee = ({name}) => {
 //     });
 //   }, []);
 
-const [direction, setDirection] = useState(-1); // 1 for left, -1 for right
+const [direction, setDirection] = useState(1); // 1 for left, -1 for right
 
 useEffect(() => {
   const marquee = marqueeRef.current;
@@ -55,10 +55,10 @@ useEffect(() => {
     onUpdate: (self) => {
       if (self.direction === 1) {
         // Scrolling Down
-        setDirection(1);
+        setDirection(-1);
       } else {
         // Scrolling Up
-        setDirection(-1);
+        setDirection(1);
       }
     },
   });
@@ -70,7 +70,7 @@ useEffect(() => {
 
   return (
         
-          <div ref={marqueeRef} className="flex w-max">
+          <div ref={marqueeRef} className="flex w-max select-none">
             {/* Duplicate text content to make the loop seamless */}
             {[...Array(3)].map((_, index) => (
               <h1 key={index} className="text-black text-9xl uppercase tracking-tighter title whitespace-nowrap mx-4">

@@ -8,18 +8,22 @@ const HoverEffectLink = ({text,textColor}) => {
   const handleMouseEnter = () => {
     if (!linkRef.current) return;
     const letters = linkRef.current.querySelectorAll(".letter");
-    const secondLetter = secondRef.current.querySelectorAll(".second")
+    const secondLetter = secondRef.current.querySelectorAll(".second");
+    
+
     gsap.to(letters, {
       y: "-100%",
       duration: 0.3,
       ease: "power1.inOut",
       stagger: 0.03,
+      overwrite:"auto"
     });
     gsap.to(secondLetter, {
       y: "0%",
       duration: 0.3,
       ease: "power1.inOut",
       stagger: 0.03,
+      overwrite:"auto"
     });
   };
   const handleMouseLeave = () => {
@@ -31,12 +35,14 @@ const HoverEffectLink = ({text,textColor}) => {
       duration: 0.3,
       ease: "power1.inOut",
       stagger: 0.03,
+      overwrite:"auto"
     });
     gsap.to(secondLetter, {
         y: "100%",
         duration: 0.3,
         ease: "power1.inOut",
         stagger: 0.03,
+        overwrite:"auto"
       });
   };
   return (

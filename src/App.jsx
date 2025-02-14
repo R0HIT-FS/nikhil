@@ -56,8 +56,8 @@ const App = () => {
 
 const pageVariants = {
   initial: { opacity: 0 },
-  animate: { opacity: 1, transition: { duration: 0.5 } },
-  exit: { opacity: 0,y:"5%", transition: { duration: 0.5 } },
+  animate: { opacity: 1,scale:1,transition: { duration: 0.5 } },
+  exit: { opacity: 0,scale:0.9, transition: { duration: 0.5 } },
 };
 
 const PageWrapper = ({ children }) => (
