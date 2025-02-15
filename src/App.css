@@ -25,25 +25,41 @@
   src: url("/public/PPWriter-ThinText.otf");
 }
 
-.title{
+body{
+  background-color:#F2F1E9;
+}
+
+.title {
   font-family: title;
 }
 
-.ppregular{
+.ppregular {
   font-family: ppregular;
 }
 
-.ppregulartext{
+.ppregulartext {
   font-family: ppregulartext;
 }
 
-.ppthin{
+.ppthin {
   font-family: ppthin;
 }
 
-.ppthintext{
+.ppthintext {
   font-family: ppthintext;
 }
 
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
 
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
 
+.scrollable-container {
+  touch-action: auto;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}

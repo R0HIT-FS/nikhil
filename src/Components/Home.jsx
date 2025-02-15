@@ -7,7 +7,6 @@ import Marquee from "./Marquee";
 // import RollingText from "./RollingText";
 // import HoverEffectLink from "./HoverEffectLink";
 import ParallaxImage from "./ParallaxImage";
-import ExpandableImage from "./ExpandabeImage";
 
 const Home = () => {
   const imgRef = useRef(null);
@@ -46,7 +45,7 @@ const Home = () => {
               initial={{ y: 0 }}
               animate={{
                 y: "100%",
-                transition: { duration: 0.8, ease: "easeInOut" },
+                transition: { duration: 0.8, ease: "easeInOut",delay:0.5 },
               }}
               exit={{ y: "100%" }}
               className="overlay absolute top-0 left-0 ] h-full w-full bg-[#F2F1E9]"
@@ -65,7 +64,7 @@ const Home = () => {
           <Marquee name={"Nikhil Dalton"} />
         </motion.div>
       </div>
-      <div className="relative h-[150vh] w-full flex justify-center items-center overflow-hidden">
+      {/* <div className="relative h-[150vh] w-full flex justify-center items-center overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full">
           <img
             ref={imgRef}
@@ -76,26 +75,8 @@ const Home = () => {
         </div>
       </div>
       <div className="flex-col md:flex justify-center items-center gap-5">
-        <div className="w-[400px] h-[500px]">
-          <ExpandableImage
-            src={`https://images.unsplash.com/photo-1606216794079-73f85bbd57d5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D`}
-            alt={"Image"}
-          />
-        </div>
-        <div className="w-[400px] h-[500px]">
-          <ExpandableImage
-            src={`https://images.unsplash.com/photo-1732737011207-69e25773b3d1?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D`}
-            alt={"Image"}
-          />
-        </div>
-        <div className="w-[400px] h-[500px]">
-          <ExpandableImage
-            src={`https://images.unsplash.com/photo-1532381872557-b370482876a3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fDRrfGVufDB8fDB8fHww`}
-            alt={"Image"}
-          />
-        </div>
       </div>
-      <div className="w-full h-[200vh] bg-green-500"></div>
+      <div className="w-full h-[200vh] bg-green-500"></div> */}
     </div>
   );
 };
