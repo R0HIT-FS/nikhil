@@ -40,7 +40,7 @@ const App = () => {
       {/* {loading ? (
         <Preloader location={location} onComplete={() => setLoading(false)} />
       ) : ( */}
-        <div className="bg-[#F2F1E9]">
+        <div className="bg-[#F2F1E9] max-w-[1920px] mx-auto overflow-hidden">
           <AnimatePresence mode="wait">
             <Routes location={location} key={location.pathname}>
               <Route path="/" element={<PageWrapper><Home /></PageWrapper>} />
@@ -55,9 +55,12 @@ const App = () => {
 };
 
 const pageVariants = {
-  initial: { opacity: 0,scale:1 },
-  animate: { opacity: 1,scale:1,transition: { duration: 0.5 } },
-  exit: { opacity: 0,scale:0.9, transition: { duration: 0.5 } },
+//   initial: { opacity: 0,scale:1 },
+//   animate: { opacity: 1,scale:1,transition: { duration: 0.5 } },
+//   exit: { opacity: 0,scale:0.9, transition: { duration: 0.5 } },
+initial:{translateY:"100%"},
+animate:{translateY:"0%",transition:{duration:1,ease:[0.83, 0, 0.17, 1]}},
+exit:{translateY:"0%",transition:{duration:1}},
 };
 
 const PageWrapper = ({ children }) => (
@@ -66,6 +69,7 @@ const PageWrapper = ({ children }) => (
     animate="animate"
     exit="exit"
     variants={pageVariants}
+    style={{transformOrigin:"bottom"}}
   >
     {children}
   </motion.div>

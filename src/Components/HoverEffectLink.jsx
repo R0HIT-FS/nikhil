@@ -52,12 +52,12 @@ const HoverEffectLink = ({text,textColor}) => {
         onMouseLeave={handleMouseLeave}
       >
 <p className="overflow-hidden" ref={linkRef}>{text.split("").map((letter, index) => (
-          <span className={`letter text-2xl sm:text-6xl ppthin inline-block`} style={{color:textColor}} key={index}>
+          <span className={`letter text-4xl sm:text-6xl ppthin inline-block`} style={{color:textColor}} key={index}>
             {letter}
           </span>
         ))}</p>
 <p className="overflow-hidden absolute top-0 " ref={secondRef}>{text.split("").map((letter, index) => (
-          <span className="second text-2xl sm:text-6xl ppthin inline-block translate-y-[100%]" style={{color:textColor}} key={index}>
+          <span className="second text-4xl sm:text-6xl ppthin inline-block translate-y-[100%]" style={{color:textColor}} key={index}>
             {letter}
           </span>
         ))}</p>

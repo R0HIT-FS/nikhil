@@ -24,12 +24,12 @@ const Header = () => {
     <div className="p-10 flex justify-between gap-2 items-center fixed top-0 left-0 w-full z-[99]">
       <Link
         to={"/"}
-        className="text-xl sm:text-4xl ppthin tracking-tighter mix-blend-difference"
+        className="text-3xl sm:text-4xl ppthin tracking-tighter mix-blend-difference"
       >
         NikhilDaltonFilms.
       </Link>
       <p
-        className={`text-md sm:text-2xl ppthin tracking-tighter cursor-pointer `}
+        className={`text-2xl sm:text-2xl ppthin tracking-tighter cursor-pointer `}
         onClick={toggleOverlay}
       >
         Menu
@@ -39,7 +39,7 @@ const Header = () => {
         className="overlay fixed top-0 right-[-100%] h-screen w-full z-[100]  bg-[#F9E79F] p-10 flex flex-col justify-center items-center"
       >
         <p
-          className="text-right absolute top-0 left-0 w-full text-black text-md sm:text-2xl ppthin tracking-tighter cursor-pointer p-10"
+          className="text-right absolute top-0 left-0 w-full text-black text-2xl sm:text-2xl ppthin tracking-tighter cursor-pointer p-10"
           onClick={toggleOverlay}
         >
           Close

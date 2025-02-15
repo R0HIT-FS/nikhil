@@ -152,8 +152,8 @@ const GalleryWithMinimap = ({ images, initialIndex = 0 }) => {
             key={index}
             className={`w-[60px] shrink-0 md:shrink md:w-full p-1 transition-all ${
               selectedImage === img
-                ? "border-1 border-black"
-                : "border-1 border-none"
+                ? "border-[0.5px] border-black"
+                : "border-[0.5px] border-none"
             }`}
             onClick={() => !isAnimating && setSelectedImage(img)}
             aria-label={`Select image ${index + 1}`}

@@ -28,7 +28,7 @@ const Home = () => {
     <div className="bg-[#F2F1E9] w-full flex flex-col justify-center gap-8 items-center relative">
       <div className="h-screen relative w-full overflow-hidden flex justify-center items-center">
         <div className="flex justify-center items-center w-full p-10">
-          <div className=" w-full h-[400px] sm:h-[500px] sm:w-[400px] relative overflow-hidden">
+          <div className=" w-full h-[400px] sm:h-[70%] sm:w-[50%] relative overflow-hidden">
             <motion.img
               initial={{ scale: 1.4, y: "0%" }}
               animate={{
@@ -48,7 +48,7 @@ const Home = () => {
                 transition: { duration: 0.8, ease: "easeInOut",delay:0.5 },
               }}
               exit={{ y: "100%" }}
-              className="overlay absolute top-0 left-0 ] h-full w-full bg-[#F2F1E9]"
+              className="overlay absolute top-0 left-0 h-full w-full bg-[#F2F1E9]"
             ></motion.div>
           </div>
         </div>
@@ -59,7 +59,7 @@ const Home = () => {
             transition: { duration: 1, ease: [0.25, 1, 0.5, 1], delay: 0.8 },
           }}
           exit={{ y: 0 }}
-          className="absolute bottom-0 overflow-hidden "
+          className="absolute overflow-hidden bottom-0"
         >
           <Marquee name={"Nikhil Dalton"} />
         </motion.div>
