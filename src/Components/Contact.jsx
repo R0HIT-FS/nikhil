@@ -14,8 +14,7 @@ const images = [
   "https://images.unsplash.com/photo-1517940310602-26535839fe84?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTEyfHxtb2RlbHN8ZW58MHx8MHx8fDA%3D",
   "https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTIzfHxtb2RlbHN8ZW58MHx8MHx8fDA%3D",
   "https://images.unsplash.com/photo-1515213038193-95fd9133fc29?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTQ3fHxtb2RlbHN8ZW58MHx8MHx8fDA%3D",
-  "https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTIzfHxtb2RlbHN8ZW58MHx8MHx8fDA%3D",
-  "https://images.unsplash.com/photo-1515213038193-95fd9133fc29?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTQ3fHxtb2RlbHN8ZW58MHx8MHx8fDA%3D"
+
 ];
 
 const Contact = () => {
@@ -23,7 +22,7 @@ const Contact = () => {
     <div className='ppthin '>
         {/* <h1 className='text-black text-9xl text-center uppercase title'>Contact</h1> */}
         <GalleryWithMinimap images={images}/>
-        <div className='w-full h-screen bg-red-300'></div>
+        {/* <div className='w-full h-screen bg-red-300'></div> */}
     </div>
   )
 }

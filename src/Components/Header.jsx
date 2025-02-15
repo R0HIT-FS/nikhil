@@ -44,7 +44,7 @@ const Header = () => {
         >
           Close
         </p>
-        <Link to={"/"} onClick={toggleOverlay}><HoverEffectLink text={"HOME"} textColor={'black'}/></Link>
+        <Link to={"/"} onClick={toggleOverlay}><HoverEffectLink text={"INDEX"} textColor={'black'}/></Link>
         {/* <Link to={"/about"} onClick={toggleOverlay}><HoverEffectLink text={"ABOUT"} textColor={'black'}/></Link> */}
         <Link to={"/contact"} onClick={toggleOverlay}><HoverEffectLink text={"WORK"} textColor={'black'}/></Link>
       </div>

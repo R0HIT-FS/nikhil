@@ -162,7 +162,7 @@ const GalleryWithMinimap = ({ images, initialIndex = 0 }) => {
             <img
               src={img}
               alt={`Thumbnail ${index + 1}`}
-              className="w-full h-16 object-cover"
+              className="w-full h-16 object-cover cursor-pointer"
               loading="lazy"
             />
           </button>
