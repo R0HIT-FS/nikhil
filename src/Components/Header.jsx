@@ -29,7 +29,7 @@ const Header = () => {
         NikhilDaltonFilms.
       </Link>
       <p
-        className={`text-2xl sm:text-2xl ppthin tracking-tighter cursor-pointer `}
+        className={`text-1xl sm:text-2xl ppthin tracking-tighter cursor-pointer `}
         onClick={toggleOverlay}
       >
         Menu
@@ -39,7 +39,7 @@ const Header = () => {
         className="overlay fixed top-0 right-[-100%] h-screen w-full z-[100]  bg-[#F9E79F] p-10 flex flex-col justify-center items-center"
       >
         <p
-          className="text-right absolute top-0 left-0 w-full text-black text-2xl sm:text-2xl ppthin tracking-tighter cursor-pointer p-10"
+          className="text-right absolute top-0 left-0 w-full text-black text-1xl sm:text-2xl ppthin tracking-tighter cursor-pointer p-10"
           onClick={toggleOverlay}
         >
           Close
