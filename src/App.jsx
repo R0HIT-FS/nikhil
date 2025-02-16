@@ -60,7 +60,10 @@ const pageVariants = {
 //   exit: { opacity: 0,scale:0.9, transition: { duration: 0.5 } },
 initial:{translateY:"100%"},
 animate:{translateY:"0%",transition:{duration:1,ease:[0.83, 0, 0.17, 1]}},
-exit:{translateY:"0%",transition:{duration:1}},
+exit:{opacity:0,transition:{duration:1}},
+// initial:{scaleY:0},
+// animate:{scaleY:1,transition:{duration:0.8,ease:[0.83, 0, 0.17, 1]}},
+// exit:{opacity:0,transition:{duration:0.5}},
 };
 
 const PageWrapper = ({ children }) => (

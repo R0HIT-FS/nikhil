@@ -73,7 +73,7 @@ useEffect(() => {
           <div ref={marqueeRef} className="flex w-max select-none">
             {/* Duplicate text content to make the loop seamless */}
             {[...Array(3)].map((_, index) => (
-              <h1 key={index} className="text-black text-9xl uppercase tracking-tighter title whitespace-nowrap mx-4">
+              <h1 key={index} className="text-black text-9xl uppercase tracking-tighter ppthin whitespace-nowrap mx-4">
                 {name} - {name} - {name} - {name} - {name} - {name} - {name} - {name} - {name} -
               </h1>
             ))}
